@@ -10,7 +10,7 @@ namespace ToDoList.Infrastructure.Repositories
     {
         private AppDbContext dbContext { get; set; }
 
-        private BaseRepository(AppDbContext dbContext)
+        public BaseRepository(AppDbContext dbContext)
         {
             this.dbContext = dbContext;
         }

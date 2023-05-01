@@ -5,9 +5,9 @@ using ToDoList.Domain.Models;
 
 namespace ToDoList.Application.Profiles
 {
-    public class TodoProfileDTO : Profile
+    public class ToDoProfileDTO : Profile
     {
-        public TodoProfileDTO()
+        public ToDoProfileDTO()
         {
             CreateMap<BaseEntity, BaseEntityDTO>().ReverseMap();
             CreateMap<ToDo, ToDoDTO>().ReverseMap();

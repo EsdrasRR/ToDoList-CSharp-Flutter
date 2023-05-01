@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ToDoList.Domain.Models;
+using ToDoList.Infrastructure.Interfaces;
 
 namespace ToDoList.Infrastructure.Repositories
 {
-    internal class ToDoRepository
+    public class ToDoRepository : BaseRepository<ToDo>, IToDoRepository
     {
+        public ToDoRepository(AppDbContext appDbContext) : base(appDbContext) { }
+
     }
 }
