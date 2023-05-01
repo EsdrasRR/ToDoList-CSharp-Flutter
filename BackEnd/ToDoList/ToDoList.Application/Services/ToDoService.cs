@@ -11,13 +11,13 @@ namespace ToDoList.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private ToDoService(IUnitOfWork unitOfWork, IMapper mapper)
+        public ToDoService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
-        public ToDoDTO CreateToDo(CreateTodoDTO todo)
+        public ToDoDTO CreateToDo(CreateToDoDTO todo)
         {
             var todoEntity = _mapper.Map<ToDo>(todo);
             _unitOfWork.ToDos.Create(todoEntity);

@@ -6,7 +6,7 @@ namespace ToDoList.Application.Interfaces
     {
         public Task<List<ToDoDTO>> GetToDosAsync(int? userId);
         public ToDoDTO UpdateToDo(ToDoDTO todo);
-        public ToDoDTO CreateToDo(CreateTodoDTO todo);
+        public ToDoDTO CreateToDo(CreateToDoDTO todo);
         public void DeleteToDo(int? userId, int todoId);
 
     }
