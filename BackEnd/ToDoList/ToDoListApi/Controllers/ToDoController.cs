@@ -34,7 +34,7 @@ namespace ToDoList.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(CreateTodoDTO createTodoDTO)
+        public async Task<IActionResult> Post(CreateToDoDTO createTodoDTO)
         {
             if (_user.IsInRole(Roles.SuperAdmin))
             {

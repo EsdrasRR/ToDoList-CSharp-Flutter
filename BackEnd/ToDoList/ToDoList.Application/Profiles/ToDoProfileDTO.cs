@@ -11,7 +11,7 @@ namespace ToDoList.Application.Profiles
         {
             CreateMap<BaseEntity, BaseEntityDTO>().ReverseMap();
             CreateMap<ToDo, ToDoDTO>().ReverseMap();
-            CreateMap<ToDo, CreateTodoDTO>().ReverseMap();
+            CreateMap<ToDo, CreateToDoDTO>().ReverseMap();
         }
     }
 }

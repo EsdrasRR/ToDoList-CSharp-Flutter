@@ -2,7 +2,7 @@
 
 namespace ToDoList.Application.Models.ToDo
 {
-    public class CreateTodoDTO
+    public class CreateToDoDTO
     {
         [Required]
         public string Title { get; set; }
