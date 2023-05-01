@@ -1,15 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using ToDoList.Domain.Models;
 using ToDoList.Infrastructure.Models;
-using ToDoList.Infrastructure.Extensions;
+using ToDoList.Infrastructure.Extensions; 
 
 namespace ToDoList.Infrastructure
 {
