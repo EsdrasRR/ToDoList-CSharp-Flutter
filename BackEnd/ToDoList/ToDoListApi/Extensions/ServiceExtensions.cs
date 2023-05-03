@@ -14,7 +14,7 @@ namespace ToDoList.Api.Extensions
         public static void ConfigureDatabase(this IServiceCollection services, IConfiguration Configuration)
         {
             services.AddDbContext<AppDbContext>(opt =>
-               opt.UseNpgsql(Configuration.GetConnectionString("Main"), options => options.MigrationsAssembly("TodoApp.Infrastructure")));
+               opt.UseSqlServer(Configuration.GetConnectionString("Main"), options => options.MigrationsAssembly("TodoApp.Infrastructure")));
         }
 
         public static void ConfigureIdentity(this IServiceCollection services, IConfiguration Configuration)
